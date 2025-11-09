@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	fmt.Println("Hello! What is your name?")
@@ -15,6 +18,7 @@ func main() {
 		fmt.Println("Nice! You are on the right quiz then!")
 	} else {
 		fmt.Println("Why are you taking the quiz then? Maybe give the Cola Quiz a try instead! :)")
+		os.Exit(0)
 	}
 
 	fmt.Printf("What is better, Dr Pepper or Mountain Dew? ")
